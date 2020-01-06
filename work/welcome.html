@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Assessment</title>
+  <link rel="stylesheet" href="css/welcome.css">
+  <script src="js/welcome.js"></script>
+
+</head>
+<body>
+  <h1>Result of Web Developer Test Assessment</h1>
+
+  <div>
+	        <!-- Creating the form to submit the message  -->
+            <form role="form" id="idform" name="msgfrm">
+			<!-- Creation of the name field  -->
+                 <label for="idname">Name: &nbsp;</label><input name="name" id="idname" />
+			<!-- Creation of the message field -->	 
+                 <label for="idmsg">Message: &nbsp; </label><input name="message" id="idmsg" />
+			<!-- Creating a simple html button to trigger the javascript function  -->	 
+             <button type="button" Onclick="javascript:WriteMsg();return false;">Send</button>
+            </form>  
+			
+			<!-- this div will display the message from the html form  -->	 
+            <div id="idmsgbox"> </div>
+
+  </div>
+
+</body>
+</html>
