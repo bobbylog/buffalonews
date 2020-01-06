@@ -9,7 +9,7 @@ import (
 func main() {
   
   //Setting working directory to work
-  fs := http.FileServer(http.Dir("work/buffalonews/work"))
+  fs := http.FileServer(http.Dir("work/buffalonews"))
   
   //creating a handler which responds to all HTTP requests with the contents of a given FileSystem
   http.Handle("/", fs)
